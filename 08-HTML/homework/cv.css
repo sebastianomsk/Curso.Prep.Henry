@@ -1,0 +1,142 @@
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #c2c2c2;
+}
+
+header{
+    height: 15rem;
+
+    display: flex;
+    flex-direction: row;   
+}  
+
+main {
+    /* Horizontal */
+    -webkit-flex: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background: #215999;
+    width: 100%;
+    text-align: center;
+  }
+
+img{
+    margin        : 0.625rem; 	
+    display       : flex; 	
+    flex-direction: column;  	
+    object-fit: cover; 	
+    width     : 13.75rem; 	
+    height    : 13.75rem;
+
+}
+
+.clearfix {
+    overflow: auto;
+  }
+
+.foto{
+    width: 15rem;
+    height: 15rem;
+
+    background-color: #d9d9d9;
+}
+
+.nombre{
+    /* Vertical */
+    -webkit-flex: 2;
+    flex: 2;
+   
+    text-align: center;
+   
+    display: flex;     
+    justify-content: center;    
+    flex-direction: column;
+    position: relative;
+}
+
+.skills{
+    /* width: 15rem; */
+    width: 240px;
+    background-color: #2a68af;
+    display: flex;     
+    flex-direction: column;
+}
+.contenedor{
+     margin: 1rem;
+     
+}
+
+.descripcion{
+     -webkit-flex: 2;
+    flex: 2;
+   
+    display: flex;     
+    justify-content: center;    
+    flex-direction: column;
+}
+
+h1{
+    font-size: 5rem;
+    color: black;
+}
+h2{ 
+     background-color: #2a68af;
+} 
+
+.lista{
+    margin-left: 5rem;
+    
+}
+
+.img-fondo{
+    background-image: url(https://dirigentesdigital.com/multimedia/img/big/shutterstock-723591637_41-131616_20190304091535.jpg);
+    background-size: cover;
+}
+
+
+ @media  (max-width: 768px) {
+    body,header,main,footer{
+      display: inline;
+      margin-right: 3rem;
+    }
+  } 
+ @media  (max-width: 768px){
+    .skills,.foto{
+        width: auto; 
+        text-align: center;
+        align-items:center;
+        display: flex;     
+        justify-content: center;    
+        flex-direction: column;
+        position: relative;
+      }
+  }
+  @media(max-width: 768px){
+    .lista{
+        margin-right: 5rem;
+    }
+
+  }
+  @media(max-width: 768px){
+    footer{
+        background: #215999;
+        display: -webkit-flex;
+        display:         flex;
+        -webkit-align-items: bottom;
+        align-items: bottom;
+        -webkit-justify-content: bottom;
+        justify-content: bottom;
+    }
+  }
